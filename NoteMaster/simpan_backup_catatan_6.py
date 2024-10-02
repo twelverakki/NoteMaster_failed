@@ -65,32 +65,32 @@ def backup_catatan(file_path: str, backup_path: str) -> None:
 
 
 
-# tambah id
-# # Contoh penggunaan  
-# import os  
-# if __name__ == "__main__":  
-#     # Minta pengguna untuk memasukkan jalur folder  
-#     folder_path = input("Masukkan jalur folder untuk menyimpan catatan (misal: catatan_folder): ")  
+# tambah id bde
+# Contoh penggunaan  
+import os  
+if __name__ == "__main__":  
+    # Minta pengguna untuk memasukkan jalur folder  
+    folder_path = input("Masukkan jalur folder untuk menyimpan catatan (misal: catatan_folder): ")  
     
-#     # Buat folder jika belum ada  
-#     os.makedirs(folder_path, exist_ok=True)  
+    # Buat folder jika belum ada  
+    os.makedirs(folder_path, exist_ok=True)  
 
-#     # Catatan yang akan disimpan  
-#     catatan_list = [  
-#         {"judul": "Catatan Pertama", "isi": "Ini adalah isi catatan pertama."},  
-#         {"judul": "Catatan Kedua", "isi": "Ini adalah isi catatan kedua."}  
-#     ]  
+    # Catatan yang akan disimpan  
+    catatan_list = [  
+        {"judul": "Catatan Pertama", "isi": "Ini adalah isi catatan pertama."},  
+        {"judul": "Catatan Kedua", "isi": "Ini adalah isi catatan kedua."}  
+    ]  
     
-#     # Simpan catatan dalam format JSON, TXT, dan CSV  
-#     json_file_path = os.path.join(folder_path, "catatan.json")  
-#     txt_file_path = os.path.join(folder_path, "catatan.txt")  
-#     csv_file_path = os.path.join(folder_path, "catatan.csv")  
+    # Simpan catatan dalam format JSON, TXT, dan CSV  
+    json_file_path = os.path.join(folder_path, "catatan.json")  
+    txt_file_path = os.path.join(folder_path, "catatan.txt")  
+    csv_file_path = os.path.join(folder_path, "catatan.csv")  
     
-#     simpan_catatan_json(catatan_list, json_file_path)  
-#     simpan_catatan_txt(catatan_list, txt_file_path)  
-#     simpan_catatan_csv(catatan_list, csv_file_path)  
+    simpan_catatan_json(catatan_list, json_file_path)  
+    simpan_catatan_txt(catatan_list, txt_file_path)  
+    simpan_catatan_csv(catatan_list, csv_file_path)  
     
-#     # Buat backup untuk setiap file yang disimpan  
-#     backup_catatan(json_file_path, os.path.join(folder_path, "catatan_backup.json"))  
-#     backup_catatan(txt_file_path, os.path.join(folder_path, "catatan_backup.txt"))  
-#     backup_catatan(csv_file_path, os.path.join(folder_path, "catatan_backup.csv"))
+    # Buat backup untuk setiap file yang disimpan  
+    backup_catatan(json_file_path, os.path.join(folder_path, "catatan_backup.json"))  
+    backup_catatan(txt_file_path, os.path.join(folder_path, "catatan_backup.txt"))  
+    backup_catatan(csv_file_path, os.path.join(folder_path, "catatan_backup.csv"))
