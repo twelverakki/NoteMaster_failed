@@ -1,21 +1,20 @@
-from setuptools import setup, find_packages
+from setuptools import setup, find_packages  
 
-with open("README.md", "r") as f:
-    page_description = f.read()
-
-with open("requirements.txt") as f:
-    requirements = f.read().splitlines()
-
-setup(
-    name="package_name",
-    version="0.0.1",
-    author="my_name",
-    author_email="my_email",
-    description="My short description",
-    long_description=page_description,
-    long_description_content_type="text/markdown",
-    url="my_github_repository_project_link"
-    packages=find_packages(),
-    install_requires=requirements,
-    python_requires='>=3.8',
+setup(  
+    name="NoteMaster",  
+    version="0.1.0",  
+    author="Kelompok 6",  
+    author_email="email@domain.com",  
+    description="Package untuk mengelola catatan",  
+    long_description=open('README.md').read(),  
+    long_description_content_type="text/markdown",  
+    url="https://github.com/username/NoteMaster",  
+    packages=find_packages(),  
+    install_requires=open('requirements.txt').read().splitlines(),  
+    classifiers=[  
+        "Programming Language :: Python :: 3",  
+        "License :: OSI Approved :: MIT License",  
+        "Operating System :: OS Independent",  
+    ],  
+    python_requires='>=3.6',  
 )
