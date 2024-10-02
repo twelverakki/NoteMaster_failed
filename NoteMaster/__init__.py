@@ -6,4 +6,8 @@ from .simpan_backup_catatan_6 import simpan_catatan_json, simpan_catatan_txt, si
 # from .tampilkan_catatan import tampilkan_catatan  
 
 
-# ubah nama file ges, biar ini bisa di pakai ya
+# ubah nama file ges, biar ini bisa di pakai ya1
+
+
+
+
